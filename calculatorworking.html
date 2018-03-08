@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <title>Document</title>
+</head>
+   <body>
+     <div class="calc-box">
+      <form name="calc">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input class="screen-box" type="text" name="screen" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input class="calc-button" type="button" value="1" onclick="calc.screen.value += '1'"></td>
+               <td><input class="calc-button" type="button" value="2" onclick="calc.screen.value += '2'"></td>
+               <td><input class="calc-button" type="button" value="3" onclick="calc.screen.value += '3'"></td>
+               <td><input class="calc-button" type="button" value="+" onclick="calc.screen.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input class="calc-button" type="button" value="4" onclick="calc.screen.value += '4'"></td>
+               <td><input class="calc-button" type="button" value="5" onclick="calc.screen.value += '5'"></td>
+               <td><input class="calc-button" type="button" value="6" onclick="calc.screen.value += '6'"></td>
+               <td><input class="calc-button" type="button" value="-" onclick="calc.screen.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input class="calc-button" type="button" value="7" onclick="calc.screen.value += '7'"></td>
+               <td><input class="calc-button" type="button" value="8" onclick="calc.screen.value += '8'"></td>
+               <td><input class="calc-button" type="button" value="9" onclick="calc.screen.value += '9'"></td>
+               <td><input class="calc-button" type="button" value="/" onclick="calc.screen.value += '/'"></td>
+            </tr>
+            <tr>
+               <td><input class="calc-button" type="button" value="C" onclick="calc.screen.value = ''"></td>
+               <td><input class="calc-button" type="button" value="0" onclick="calc.screen.value += '0'"></td>
+               <td><input class="calc-button" type="button" value="=" onclick="calc.screen.value = eval(calc.screen.value)"></td>
+               <td><input class="calc-button" type="button" value="*" onclick="calc.screen.value += '*'"></td>
+            </tr>
+         </table>
+      </form>
+      </div>
+   </body>
+</html>
